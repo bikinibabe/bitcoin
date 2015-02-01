@@ -81,7 +81,7 @@ private:
                     fAllOk &= fOk;
                     nTodo -= nNow;
                     if (nTodo == 0 && !fMaster)
-                        // We processed the last element; inform the master he or she can exit and return the result
+                        // We processed the last element; inform the master they can exit and return the result
                         condMaster.notify_one();
                 } else {
                     // first iteration
